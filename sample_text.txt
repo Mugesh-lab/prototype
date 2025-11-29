@@ -1,0 +1,9 @@
+Hello, I am going to Tirunelveli
+
+This is a sample text file for testing the Braille converter tool. You can upload this file to the accessibility suite to convert English text into Braille symbols.
+
+The quick brown fox jumps over the lazy dog.
+
+Accessibility is important for everyone. We should make technology usable for all people, regardless of their abilities.
+
+Welcome to the Speech and Accessibility Suite!

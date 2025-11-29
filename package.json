@@ -1,0 +1,32 @@
+{
+  "name": "accessibility-suite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node server/index.js",
+    "start": "npm run server"
+  },
+  "dependencies": {
+    "framer-motion": "^10.12.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "zustand": "^4.4.0",
+    "lucide-react": "^0.230.0",
+    "clsx": "^1.2.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "ws": "^8.13.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.26",
+    "tailwindcss": "^3.4.8",
+    "vite": "^5.2.1"
+  }
+}
