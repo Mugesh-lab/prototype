@@ -123,3 +123,16 @@ const PORT = process.env.PORT || 4000
 server.listen(PORT, () => {
   console.log(`Accessibility backend running on http://localhost:${PORT}`)
 })
+
+// If a frontend build exists, serve it as static from the repo root `dist/` folder.
+// This allows deploying a single container that serves both frontend and backend.
+const fs = require('fs')
+const path = require('path')
+const distPath = path.join(__dirname, '..', 'dist')
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath))
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(distPath, 'index.html'))
+  })
+  console.log('Serving frontend from', distPath)
+}
